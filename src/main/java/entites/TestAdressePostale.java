@@ -12,6 +12,8 @@ public class TestAdressePostale {
 		AdressePostale a2 = new AdressePostale(56, "Rue des Sapins", 34000, "Montpellier");
 		System.out.println(a2);
 	
+		a1.setVille("Paris");
+		System.out.println(a1.getVille());
 	}
 
 }

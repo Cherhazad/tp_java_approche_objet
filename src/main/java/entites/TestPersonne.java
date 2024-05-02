@@ -11,11 +11,22 @@ public class TestPersonne {
 		
 		
 		Personne p1 = new Personne("blup", "Sophie", a1);
-		System.out.println(p1);
+		
 		
 		
 		Personne p2 = new Personne("Tada", "Juliette", a2);
-		System.out.println(p2);
+		
+		
+		Personne p3 = new Personne("Tada", "Juliette", new AdressePostale(3, "Av de Paris", 34000, "Montpellier"));
+		
+		
+		p1.sePresenter();
+		p1.setNom("CHIWAWA");
+		p1.setPrenom("Basile");
+		
+		
+		System.out.println(p1.getNom());
+		System.out.println(p1.getPrenom());
 		
 
 	}
