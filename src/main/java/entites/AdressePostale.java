@@ -7,7 +7,7 @@ public class AdressePostale {
 	int codePostal;
 	String ville;
 
-	AdressePostale(int nvNumeroRue, String nvLibelleRue, int nvCodePostal, String nvVille) {
+	public AdressePostale(int nvNumeroRue, String nvLibelleRue, int nvCodePostal, String nvVille) {
 
 		numeroRue = nvNumeroRue;
 		libelleRue = nvLibelleRue;
