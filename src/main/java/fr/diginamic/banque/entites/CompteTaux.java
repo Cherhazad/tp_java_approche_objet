@@ -10,8 +10,10 @@ public class CompteTaux extends Compte {
 
 	}
 	
+	@Override
 	public String toString(){
-	    return numCompte + " " + soldeCompte + " " + tauxConv;
+		
+	    return super.toString() + " " + tauxConv;
 	  }
 
 }
