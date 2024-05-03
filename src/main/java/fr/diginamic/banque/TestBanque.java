@@ -22,7 +22,7 @@ public class TestBanque {
 		//comptes[0] = cptBancaire1;
 		//comptes[1] = cptBancaire2;
 		
-		
+		//note: on peut stocker dans un tableau de le classe Compte un CompteTaux car CompteTaux est aussi un Compte (héritage)
 		for (int i = 0; i < arrCompte.length; i++) {
 			System.out.println("Compte n° " + i +": "+ arrCompte[i]);
 		}
