@@ -1,8 +1,13 @@
-package fr.diginamic.banque.entites;
+package fr.diginamic.banque;
+
+import fr.diginamic.banque.entites.Compte;
+import fr.diginamic.banque.entites.CompteTaux;
 
 public class TestBanque {
 
 	public static void main(String[] args) {
+		
+		
 
 		Compte cptBancaire1 = new Compte(2987575287261819L, 2756.76);
 		System.out.println("Numéro de compte: " + cptBancaire1.numCompte);
@@ -14,6 +19,7 @@ public class TestBanque {
 
 		Compte[] arrCompte = new Compte[2];
 		arrCompte[0] = cptBancaire1;
+		
 		arrCompte[1] = cptBancaire2; // cause un bug, à cause de la classe CompteTaux manquante
 
 		System.out.println(arrCompte[2]); //bug mais le [1] fonctionne
