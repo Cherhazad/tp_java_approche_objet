@@ -19,6 +19,15 @@ public class TestListeString {
 		String maxVille = Collections.max(villes, Comparator.comparing(String::length));
 		System.out.println(maxVille);
 		
+		//seconde façon avec une boucle CORRECTION
+		String max = villes.get(0); //pour l'initialiser, on aurait pu mettre String max ="";
+		for (int i = 0; i<villes.size(); i++) {
+			String nom = villes.get(i);
+			if (nom.length() > max.length()) {
+				max =nom;
+			}
+		}
+		System.out.println(max);
 		
 		// mettre en majuscule les villes
 		for (int i=0 ; i < villes.size(); i++) {
@@ -34,7 +43,7 @@ public class TestListeString {
 		Iterator<String> iter = villes.iterator();
 		while (iter.hasNext()) {
 			String nom = iter.next();
-			if (nom.startsWith("N")) {
+			if (nom.startsWith("N")) { //nom.charAt(0) == 'N'
 				iter.remove();
 			}
 		}
