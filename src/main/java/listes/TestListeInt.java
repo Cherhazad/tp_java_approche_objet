@@ -43,5 +43,6 @@ public class TestListeInt {
 			}
 		}
 		System.out.println(array);
+				
 	}
 }
