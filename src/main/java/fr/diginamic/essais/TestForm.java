@@ -15,8 +15,8 @@ public class TestForm {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		AffichageForme formeCarre = new AffichageForme();
-		double resultat = formeCarre.afficher(carre);
+		//AffichageForme formeCarre = new AffichageForme();
+		//double resultat = formeCarre.afficher(carre);
 		
 		
 		//A corriger et finir...
