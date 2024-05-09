@@ -1,11 +1,10 @@
 package fr.diginamic.formes;
 
-public abstract class Carre extends Rectangle {
+public class Carre extends Rectangle {
 
 	public Carre(double longueur) {
-		super(longueur, longueur);
-		this.longueur = longueur;
-		// TODO Auto-generated constructor stub
+		super(longueur);
+
 	}
 
 	public double calculerSurface() {
@@ -14,6 +13,11 @@ public abstract class Carre extends Rectangle {
 
 	public double calculerPerimetre() {
 		return longueur * 4;
+	}
+
+	@Override
+	public String toString() {
+		return "carré ";
 	}
 
 }

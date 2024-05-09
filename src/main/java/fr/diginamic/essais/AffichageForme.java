@@ -2,18 +2,14 @@ package fr.diginamic.essais;
 
 import fr.diginamic.formes.Forme;
 
-public abstract class AffichageForme {
+public class AffichageForme {
 
-	Forme formeGeometrique; //probablement à corriger
+	Forme forme;
 
-	public void afficher(Forme formeGeometrique) {
-		calculerSurface();
-		calculerPerimetre();
+	public static void afficher(Forme forme) {
+		System.out.println("La surface du " + forme.toString() + "est de: " + forme.calculerSurface()); 
+		System.out.println("Le périmètre du " + forme.toString() + "est de: " + forme.calculerPerimetre()); 
 
 	}
-
-	public abstract double calculerSurface();
-
-	public abstract double calculerPerimetre();
 
 }

@@ -11,15 +11,16 @@ public class TestForm {
 	public Cercle cercle;
 	public Rectangle rectangle;
 	public Carre carre;
-	
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Cercle cercle = new Cercle(2.85);
+		Rectangle rectangle = new Rectangle(8,4.5);
+		Carre carre = new Carre(6);
 		
-		//AffichageForme formeCarre = new AffichageForme();
-		//double resultat = formeCarre.afficher(carre);
-		
-		
-		//A corriger et finir...
+		AffichageForme.afficher(cercle);
+		AffichageForme.afficher(rectangle);
+		AffichageForme.afficher(carre);
 
 	}
 
