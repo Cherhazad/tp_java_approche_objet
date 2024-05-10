@@ -10,6 +10,13 @@ public abstract class Intervenant {
 		this.prenom = prenom;
 	}
 
-	public abstract double getSalaire();
+	public abstract String getSalaire();
+
+	public abstract String getStatut();
+
+	public String afficherDonnees() {
+		return "Nom: " + nom + " - " + "Prénom: " + prenom + " - " + getStatut() + " - " + getSalaire() + "€.";
+
+	}
 
 }
