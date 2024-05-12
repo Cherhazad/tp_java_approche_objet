@@ -10,4 +10,8 @@ public abstract class Piece {
 		this.numEtage = numEtage;
 	}
 	
+	public int getNumEtage() {
+		return numEtage;
+	}
+	
 }
