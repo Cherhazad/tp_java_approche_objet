@@ -63,7 +63,7 @@ public class ApplicationRecensement {
 			recherche3.traiter(recensement, scanner);
 			break;
 			
-		case 4:
+		case 4: 
 	
 		}
 		scanner.close();

@@ -1,37 +1,50 @@
 package listes;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class TestVilles {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		ArrayList<Ville> villes = new ArrayList<Ville>();
-		//villes.add( "Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes");
+		ArrayList<Ville> villes = new ArrayList<>();
+		villes.add(new Ville("Nice", 343000));
+		villes.add(new Ville("Carcassonne", 47800));
+		villes.add(new Ville("Narbonne", 53400));
+		villes.add(new Ville("Lyon", 484000));
+		villes.add(new Ville("Foix", 9700));
+		villes.add(new Ville("Pau", 77200));
+		villes.add(new Ville("Marseille", 850700));
+		villes.add(new Ville("Tarbes", 40600));
 
-		villes.add(new Ville("Nice",343000));
-		villes.add(new Ville("Carcasonne",47800));
-		villes.add(new Ville("Naarbonne",53400));
-		villes.add(new Ville("Lyon",484000));
-		villes.add(new Ville("Foix",9700));
-		villes.add(new Ville("Pau",77200));
-		villes.add(new Ville("Marseille",850700));
-		villes.add(new Ville("Tarbes",40600));
-		
-		//Ville la plus peuplée
-		Ville villeMax = new Ville("", 0);
+		// Boucle de traitement
+		Ville villeMax = villes.get(0);
+		Ville villeMin = villes.get(0);
 		for (int i=0; i<villes.size(); i++) {
+			
 			Ville villeCourante = villes.get(i);
-		//	if (villeMax == null || > villeMax.getNbHabs()) {
-				
+			
+			// Recherche de la plus grande ville
+			if (villeCourante.getNbHabs() > villeMax.getNbHabs()) {
+				villeMax = villeCourante;
+			}
+			
+			// Recherche de la plus petite ville
+			if (villeCourante.getNbHabs() < villeMin.getNbHabs()) {
+				villeMin = villeCourante;
+			}
+			
+			// Mettre en MAJ le nom des villes de +100 000
+			if (villeCourante.getNbHabs()>=100000) {
+				String nom = villeCourante.getNom();
+				villeCourante.setNom(nom.toUpperCase());
 			}
 		}
-		//System.out.println(villeMax);
+		System.out.println(villeMax);
+		System.out.println(villeMin);
 		
-		//récupérer corrigé sur git hub de Richard
+		// Suppression de la + petite ville
+		villes.remove(villeMin);
+		
+		System.out.println(villes);
 	}
 
-//}
+}

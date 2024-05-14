@@ -50,18 +50,9 @@ public class Recensement {
 	}
 
 	public int getDixRegion() {
-
-		int popRegion = 0;
-		String regionsDix = scanner.nextLine();
 		
-		if (regionsDix == "yes") {
-			for (Ville ville : listVilles) {
-				if (regionsDix == "yes") { // ville.codeRegion == Integer.parseInt(inputRegion) ||
-					popRegion += ville.popTotale;
-				}
-			}
-		}
-		return popRegion;
+		villesCroissantes = listVilles.sort();
+		
 	}
 
 }
