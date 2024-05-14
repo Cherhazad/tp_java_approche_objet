@@ -12,8 +12,6 @@ public class LectureFichier {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		ArrayList<String> ville = new ArrayList();
-		
 		Path pathFile = Paths.get("/Users/plantsarelife/Desktop/Diginamic/Cours/11. Java/Approche POO/12. Java approche objet/TP/recensement.csv");
 		List<String> lignes = Files.readAllLines(pathFile); //, StandardCharsets.UTF_8
 		ArrayList<String> lignesInstanciees = new ArrayList();
