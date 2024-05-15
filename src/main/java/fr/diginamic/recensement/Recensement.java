@@ -49,10 +49,10 @@ public class Recensement {
 		return popRegion;
 	}
 
-	public int getDixRegion() {
-		
-		villesCroissantes = listVilles.sort();
-		
-	}
+//	public int getDixRegion() {
+//		
+//		villesCroissantes = listVilles.sort();
+//		
+//	}
 
 }

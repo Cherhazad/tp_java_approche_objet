@@ -7,7 +7,7 @@ public class Region extends MenuService{
 	public void traiter(Recensement recensement, Scanner scanner) {
 		System.out.println("Vous souhaitez afficher les 10 régions les plus peuplées: ");
 		String regionsDix = scanner.nextLine(); //faire une condition dans recensement pour en fonction de oui ou non 
-		System.out.println(recensement.getDixRegion());
+		//System.out.println(recensement.getDixRegion());
 		
 	}
 	
