@@ -35,7 +35,7 @@ public class TestCalendar {
 		System.out.println("Date convertie Allemagne: " + formateurAllemagne.format(dateJour));
 		
 		SimpleDateFormat formateurRusse = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm:ss", new Locale("ru", "RU"));
-		System.out.println("Date convertie Allemagne: " + formateurRusse.format(dateJour));
+		System.out.println("Date convertie Russe: " + formateurRusse.format(dateJour));
 		
 		
 		

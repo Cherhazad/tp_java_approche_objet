@@ -1,22 +1,27 @@
-package listes;
+package fr.diginamic.testenumeration;
 
 import java.util.Objects;
+
+import fr.diginamic.testenumeration.Continent;
 
 public class Ville {
 
 	private String nom;
 	private int nbHabs;
-	public Ville(String nom, int nbHabs) {
+	private Continent continent;
+	public Ville(String nom, int nbHabs, Continent continent) {
 		super();
 		this.nom = nom;
 		this.nbHabs = nbHabs;
+		this.continent = continent;
 		
 	}
+	
+
 	@Override
 	public String toString() {
-		return "Ville [nom=" + nom + ", nbHabs=" + nbHabs + "]";
+		return "Ville [nom=" + nom + ", nbHabs=" + nbHabs + ", continent=" + continent + "]";
 	}
-
 	
 	
 	@Override 
@@ -54,5 +59,24 @@ public class Ville {
 	public void setNbHabs(int nbHabs) {
 		this.nbHabs = nbHabs;
 	}
+	/** Getter pour continent
+	 * @return the continent
+	 */
+	public Continent getContinent() {
+		return continent;
+	}
+	/** Setter pour continent
+	 * @param continent the continent to set
+	 */
+	public void setContinent(Continent continent) {
+		this.continent = continent;
+	}
+
+
+
+
+	
+	
+	
 	
 }
